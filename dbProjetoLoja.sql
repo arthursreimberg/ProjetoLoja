@@ -31,8 +31,17 @@ PedidoId int,
 ProdutoId int,
 Quantidade int,
 PrecoUnitario decimal(10,2)
-);
+);	
 
+
+insert into TbProdutos(Nome, Descricao, Preco, ImageUrl, Estoque) 
+values('Macarrão','Macarrão parafuso', 20.00, 'images/produto.jpg', 10);
+
+insert into TbProdutos(Nome, Descricao, Preco, ImageUrl, Estoque) 
+values('Bolacha','Bolacha Recheada', 10.00, 'images/produto2.jpg', 10);
+
+insert into TbProdutos(Nome, Descricao, Preco, ImageUrl, Estoque) 
+values('Salgadinho','Salgadinho Fofura', 3.50, 'images/produto3.jpg', 10);
 -- Consultando as Tabelas do Banco
 
 select * from TbProdutos;

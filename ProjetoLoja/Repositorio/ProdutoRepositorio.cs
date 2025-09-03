@@ -16,7 +16,7 @@ namespace ProjetoLoja.Repositorio
         public async Task<IEnumerable<Produto>> TodosProdutos()
         {
             using var connection = new MySqlConnection(_connectionString);
-            var sql = "SELECT Id, Nome, Descricao, Preco, ImageUrl, Estoque FROM Produtos";
+            var sql = "SELECT Id, Nome, Descricao, Preco, ImageUrl, Estoque FROM TbProdutos";
             return await connection.QueryAsync<Produto>(sql);
         }
     }
